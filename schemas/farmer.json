@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://ezyagric.local/product.schema.json",
+    "type":"object",
+    "properties": {
+        "farmer_id":{
+            "type":"string",
+            "pattern": "AK/OT/[0-9]{4}"
+        },
+        "name":{
+            "type":"string"
+        },
+        "partner_id":{
+            "type":"string"
+        },
+        "ma_id":{
+            "type":"string",
+            "minLength":10,
+            "maxLength":10
+        }
+    },
+    "required": ["farmer_id","name"]
+}

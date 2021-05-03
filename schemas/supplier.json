@@ -1,0 +1,16 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://ezyagric.local/product.schema.json",
+    "type":"object",
+    "properties": {
+        "supplier_id":{
+            "type":"string",
+            "minLength":10,
+            "maxLength":10
+        },
+        "name":{
+            "type":"string"
+        }
+    },
+    "required": ["supplier_id","name"]
+}
